@@ -1,1 +1,13 @@
-<button (click)="fetchShop()">Fetch Shop info</button>
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/editor">Editor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/results">Results</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

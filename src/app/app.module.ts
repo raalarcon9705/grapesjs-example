@@ -4,10 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { GRAPHQL_CONFIG } from './graphql';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ResultsComponent } from './componensts/results/results.component';
+import { EditorComponent } from './componensts/editor/editor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ResultsComponent,
+    EditorComponent
   ],
   imports: [
     BrowserModule,

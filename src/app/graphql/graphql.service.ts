@@ -26,5 +26,5 @@ export class GraphqlService {
 }
 
 interface GQLResponse<T> {
-  data: T
+  data: T;
 }
