@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
-import { configureEditor } from '../../utils/configure-editor';
+import { configureEditor } from '../../utils/grapesjs/configure-editor';
 
 @Component({
   selector: 'app-editor',

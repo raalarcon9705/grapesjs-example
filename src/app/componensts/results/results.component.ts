@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
-import { configureEditor } from 'src/app/utils/configure-editor';
+import { configureEditor } from 'src/app/utils/grapesjs/configure-editor';
 import { parseMustache } from 'src/app/utils/mustache-parser';
 
 @Component({
