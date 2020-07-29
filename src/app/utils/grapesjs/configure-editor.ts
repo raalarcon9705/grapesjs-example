@@ -1,19 +1,23 @@
 import grapesjs from 'grapesjs';
-
+import { mdb } from './mdb';
+import { types } from './common-traits';
 export function configureEditor(gjs = '#gjs'): any {
   const editor = grapesjs.init({
     container: gjs,
     fromElement: true,
-    // plugins: ['grapesjs-blocks-bootstrap4'],
     canvas: {
       styles: [
-        // 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
+        'https://use.fontawesome.com/releases/v5.8.2/css/all.css',
+        'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
+        'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css',
+        'assets/styles/components.css'
       ],
       scripts: [
-        // 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
-        // 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
-        // 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
-        'assets/js/copy-styles.js'
+        'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js'
       ],
     },
     storageManager: {
@@ -22,13 +26,16 @@ export function configureEditor(gjs = '#gjs'): any {
       autoload: true,
       // urlStore: 'http://localhost:3000/grapesjs/',
       // urlLoad: 'http://localhost:3000/grapesjs/1'
-    }
+    },
+    plugins: [ mdb ]
   });
 
   editor.Commands.add('store-data', (e: any) => {
-      e.store()
+      e.store();
     }
   );
+
+  types(editor);
 
   editor.on('component:toggled', model => {
     if (model?.changed.status === 'selected') {

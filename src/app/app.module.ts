@@ -29,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         uri: 'https://elroisupplies.myshopify.com/api/2020-04/graphql',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
+          Accept: 'application/json',
           'x-shopify-storefront-access-token': '35ca320bd94776cba607483b85333050'
         }
       }

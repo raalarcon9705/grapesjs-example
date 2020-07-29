@@ -1190,7 +1190,7 @@ export type GQLMoney = any;
    * For a more general solution, the [Unicode CLDR number formatting database] is available with many implementations
    * (such as [TwitterCldr](https://github.com/twitter/twitter-cldr-rb)).
    */
-  export interface GQLMoneyV2 {
+export interface GQLMoneyV2 {
 
     /**
      * Decimal money amount.
@@ -1206,12 +1206,12 @@ export type GQLMoney = any;
   /**
    * A signed decimal number, which supports arbitrary precision and is serialized as a string. Example value: `"29.99"`.
    */
-  export type GQLDecimal = any;
+export type GQLDecimal = any;
 
   /**
    * Currency codes.
    */
-  export enum GQLCurrencyCode {
+export enum GQLCurrencyCode {
 
     /**
      * United States Dollars (USD).
@@ -1975,7 +1975,7 @@ export type GQLMoney = any;
     ZMW = 'ZMW'
   }
 
-  export interface GQLMetafieldConnection {
+export interface GQLMetafieldConnection {
 
     /**
      * A list of edges.
@@ -1988,7 +1988,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLMetafieldEdge {
+export interface GQLMetafieldEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2001,7 +2001,7 @@ export type GQLMoney = any;
     node: GQLMetafield;
   }
 
-  export interface GQLProductVariantPricePairConnection {
+export interface GQLProductVariantPricePairConnection {
 
     /**
      * A list of edges.
@@ -2014,7 +2014,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLProductVariantPricePairEdge {
+export interface GQLProductVariantPricePairEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2030,7 +2030,7 @@ export type GQLMoney = any;
   /**
    * The compare-at price and price of a variant sharing a currency.
    */
-  export interface GQLProductVariantPricePair {
+export interface GQLProductVariantPricePair {
 
     /**
      * The compare-at price of the variant with associated currency.
@@ -2043,7 +2043,7 @@ export type GQLMoney = any;
     price: GQLMoneyV2;
   }
 
-  export interface GQLMoneyV2Connection {
+export interface GQLMoneyV2Connection {
 
     /**
      * A list of edges.
@@ -2056,7 +2056,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLMoneyV2Edge {
+export interface GQLMoneyV2Edge {
 
     /**
      * A cursor for use in pagination.
@@ -2073,7 +2073,7 @@ export type GQLMoney = any;
    * Custom properties that a shop owner can use to define product variants.
    * Multiple options can exist. Options are represented as: option1, option2, option3, etc.
    */
-  export interface GQLSelectedOption {
+export interface GQLSelectedOption {
 
     /**
      * The product option’s name.
@@ -2089,7 +2089,7 @@ export type GQLMoney = any;
   /**
    * The measurement used to calculate a unit price for a product variant (e.g. $9.99 / 100ml).
    */
-  export interface GQLUnitPriceMeasurement {
+export interface GQLUnitPriceMeasurement {
 
     /**
      * The type of unit of measurement for the unit price measurement.
@@ -2120,7 +2120,7 @@ export type GQLMoney = any;
   /**
    * The accepted types of unit of measurement.
    */
-  export enum GQLUnitPriceMeasurementMeasuredType {
+export enum GQLUnitPriceMeasurementMeasuredType {
 
     /**
      * Unit of measurements representing volumes.
@@ -2146,7 +2146,7 @@ export type GQLMoney = any;
   /**
    * The valid units of measurement for a unit price measurement.
    */
-  export enum GQLUnitPriceMeasurementMeasuredUnit {
+export enum GQLUnitPriceMeasurementMeasuredUnit {
 
     /**
      * 1000 milliliters equals 1 liter.
@@ -2207,7 +2207,7 @@ export type GQLMoney = any;
   /**
    * Units of measurement for weight.
    */
-  export enum GQLWeightUnit {
+export enum GQLWeightUnit {
 
     /**
      * 1 kilogram equals 1000 grams.
@@ -2233,7 +2233,7 @@ export type GQLMoney = any;
   /**
    * Metafield value types.
    */
-  export enum GQLMetafieldValueType {
+export enum GQLMetafieldValueType {
 
     /**
      * A string metafield.
@@ -2251,7 +2251,7 @@ export type GQLMoney = any;
     JSON_STRING = 'JSON_STRING'
   }
 
-  export interface GQLCollectionConnection {
+export interface GQLCollectionConnection {
 
     /**
      * A list of edges.
@@ -2264,7 +2264,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLCollectionEdge {
+export interface GQLCollectionEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2280,7 +2280,7 @@ export type GQLMoney = any;
   /**
    * The price range of the product.
    */
-  export interface GQLProductPriceRange {
+export interface GQLProductPriceRange {
 
     /**
      * The highest variant's price.
@@ -2296,7 +2296,7 @@ export type GQLMoney = any;
   /**
    * The set of valid sort keys for the ProductImage query.
    */
-  export enum GQLProductImageSortKeys {
+export enum GQLProductImageSortKeys {
 
     /**
      * Sort by the `created_at` value.
@@ -2321,7 +2321,7 @@ export type GQLMoney = any;
     RELEVANCE = 'RELEVANCE'
   }
 
-  export interface GQLImageConnection {
+export interface GQLImageConnection {
 
     /**
      * A list of edges.
@@ -2334,7 +2334,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLImageEdge {
+export interface GQLImageEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2347,7 +2347,7 @@ export type GQLMoney = any;
     node: GQLImage;
   }
 
-  export interface GQLMediaConnection {
+export interface GQLMediaConnection {
 
     /**
      * A list of edges.
@@ -2360,7 +2360,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLMediaEdge {
+export interface GQLMediaEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2376,7 +2376,7 @@ export type GQLMoney = any;
   /**
    * Represents a media interface.
    */
-  export interface GQLMedia {
+export interface GQLMedia {
 
     /**
      * A word or phrase to share the nature or contents of a media.
@@ -2395,13 +2395,13 @@ export type GQLMoney = any;
   }
 
   /** Use this to resolve interface type Media */
-  export type GQLPossibleMediaTypeNames =
+export type GQLPossibleMediaTypeNames =
   'ExternalVideo' |
   'MediaImage' |
   'Model3d' |
   'Video';
 
-  export interface GQLMediaNameMap {
+export interface GQLMediaNameMap {
     Media: GQLMedia;
     ExternalVideo: GQLExternalVideo;
     MediaImage: GQLMediaImage;
@@ -2412,7 +2412,7 @@ export type GQLMoney = any;
   /**
    * The possible content types for a media object.
    */
-  export enum GQLMediaContentType {
+export enum GQLMediaContentType {
 
     /**
      * An externally hosted video.
@@ -2441,7 +2441,7 @@ export type GQLMoney = any;
    * A product may have a maximum of 3 options.
    * 255 characters limit each.
    */
-  export interface GQLProductOption extends GQLNode {
+export interface GQLProductOption extends GQLNode {
 
     /**
      * Globally unique identifier.
@@ -2459,7 +2459,7 @@ export type GQLMoney = any;
     values: Array<string>;
   }
 
-  export interface GQLProductPriceRangeConnection {
+export interface GQLProductPriceRangeConnection {
 
     /**
      * A list of edges.
@@ -2472,7 +2472,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLProductPriceRangeEdge {
+export interface GQLProductPriceRangeEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2488,7 +2488,7 @@ export type GQLMoney = any;
   /**
    * Specifies the input fields required for a selected option.
    */
-  export interface GQLSelectedOptionInput {
+export interface GQLSelectedOptionInput {
 
     /**
      * The product option’s name.
@@ -2504,7 +2504,7 @@ export type GQLMoney = any;
   /**
    * The set of valid sort keys for the ProductVariant query.
    */
-  export enum GQLProductVariantSortKeys {
+export enum GQLProductVariantSortKeys {
 
     /**
      * Sort by the `title` value.
@@ -2534,7 +2534,7 @@ export type GQLMoney = any;
     RELEVANCE = 'RELEVANCE'
   }
 
-  export interface GQLProductVariantConnection {
+export interface GQLProductVariantConnection {
 
     /**
      * A list of edges.
@@ -2547,7 +2547,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLProductVariantEdge {
+export interface GQLProductVariantEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2563,7 +2563,7 @@ export type GQLMoney = any;
   /**
    * The set of valid sort keys for the Collection query.
    */
-  export enum GQLCollectionSortKeys {
+export enum GQLCollectionSortKeys {
 
     /**
      * Sort by the `title` value.
@@ -2593,7 +2593,7 @@ export type GQLMoney = any;
    * contact information for the customer, saving logged-in customers the trouble of
    * having to provide it at every checkout.
    */
-  export interface GQLCustomer {
+export interface GQLCustomer {
 
     /**
      * Indicates whether the customer has consented to be sent marketing material via email.
@@ -2667,7 +2667,7 @@ export type GQLMoney = any;
     updatedAt: GQLDateTime;
   }
 
-  export interface GQLMailingAddressConnection {
+export interface GQLMailingAddressConnection {
 
     /**
      * A list of edges.
@@ -2680,7 +2680,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLMailingAddressEdge {
+export interface GQLMailingAddressEdge {
 
     /**
      * A cursor for use in pagination.
@@ -2696,7 +2696,7 @@ export type GQLMoney = any;
   /**
    * Represents a mailing address for customers and shipping.
    */
-  export interface GQLMailingAddress extends GQLNode {
+export interface GQLMailingAddress extends GQLNode {
 
     /**
      * The first line of the address. Typically the street address or PO Box number.
@@ -2806,7 +2806,7 @@ export type GQLMoney = any;
   /**
    * ISO 3166-1 alpha-2 country codes with some differences.
    */
-  export enum GQLCountryCode {
+export enum GQLCountryCode {
 
     /**
      * Afghanistan.
@@ -4022,7 +4022,7 @@ export type GQLMoney = any;
   /**
    * A container for all the information required to checkout items and pay.
    */
-  export interface GQLCheckout extends GQLNode {
+export interface GQLCheckout extends GQLNode {
 
     /**
      * The gift cards used on the checkout.
@@ -4200,7 +4200,7 @@ export type GQLMoney = any;
   /**
    * Details about the gift card used on the checkout.
    */
-  export interface GQLAppliedGiftCard extends GQLNode {
+export interface GQLAppliedGiftCard extends GQLNode {
 
     /**
      * The amount that was taken from the gift card by applying it.
@@ -4243,7 +4243,7 @@ export type GQLMoney = any;
   /**
    * A collection of available shipping rates for a checkout.
    */
-  export interface GQLAvailableShippingRates {
+export interface GQLAvailableShippingRates {
 
     /**
      * Whether or not the shipping rates are ready.
@@ -4261,7 +4261,7 @@ export type GQLMoney = any;
   /**
    * A shipping rate to be applied to a checkout.
    */
-  export interface GQLShippingRate {
+export interface GQLShippingRate {
 
     /**
      * Human-readable unique identifier for this shipping rate.
@@ -4288,7 +4288,7 @@ export type GQLMoney = any;
   /**
    * Represents a generic custom attribute.
    */
-  export interface GQLAttribute {
+export interface GQLAttribute {
 
     /**
      * Key or name of the attribute.
@@ -4301,7 +4301,7 @@ export type GQLMoney = any;
     value?: string;
   }
 
-  export interface GQLDiscountApplicationConnection {
+export interface GQLDiscountApplicationConnection {
 
     /**
      * A list of edges.
@@ -4314,7 +4314,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLDiscountApplicationEdge {
+export interface GQLDiscountApplicationEdge {
 
     /**
      * A cursor for use in pagination.
@@ -4331,7 +4331,7 @@ export type GQLMoney = any;
    * Discount applications capture the intentions of a discount source at
    * the time of application.
    */
-  export interface GQLDiscountApplication {
+export interface GQLDiscountApplication {
 
     /**
      * The method by which the discount's value is allocated to its entitled items.
@@ -4355,13 +4355,13 @@ export type GQLMoney = any;
   }
 
   /** Use this to resolve interface type DiscountApplication */
-  export type GQLPossibleDiscountApplicationTypeNames =
+export type GQLPossibleDiscountApplicationTypeNames =
   'AutomaticDiscountApplication' |
   'DiscountCodeApplication' |
   'ManualDiscountApplication' |
   'ScriptDiscountApplication';
 
-  export interface GQLDiscountApplicationNameMap {
+export interface GQLDiscountApplicationNameMap {
     DiscountApplication: GQLDiscountApplication;
     AutomaticDiscountApplication: GQLAutomaticDiscountApplication;
     DiscountCodeApplication: GQLDiscountCodeApplication;
@@ -4372,7 +4372,7 @@ export type GQLMoney = any;
   /**
    * The method by which the discount's value is allocated onto its entitled lines.
    */
-  export enum GQLDiscountApplicationAllocationMethod {
+export enum GQLDiscountApplicationAllocationMethod {
 
     /**
      * The value is spread across all entitled lines.
@@ -4395,7 +4395,7 @@ export type GQLMoney = any;
    * Which lines on the order that the discount is allocated over, of the type
    * defined by the Discount Application's target_type.
    */
-  export enum GQLDiscountApplicationTargetSelection {
+export enum GQLDiscountApplicationTargetSelection {
 
     /**
      * The discount is allocated onto all the lines.
@@ -4416,7 +4416,7 @@ export type GQLMoney = any;
   /**
    * The type of line (i.e. line item or shipping line) on an order that the discount is applicable towards.
    */
-  export enum GQLDiscountApplicationTargetType {
+export enum GQLDiscountApplicationTargetType {
 
     /**
      * The discount applies onto line items.
@@ -4432,14 +4432,14 @@ export type GQLMoney = any;
   /**
    * The price value (fixed or percentage) for a discount application.
    */
-  export type GQLPricingValue = GQLMoneyV2 | GQLPricingPercentageValue;
+export type GQLPricingValue = GQLMoneyV2 | GQLPricingPercentageValue;
 
   /** Use this to resolve union type PricingValue */
-  export type GQLPossiblePricingValueTypeNames =
+export type GQLPossiblePricingValueTypeNames =
   'MoneyV2' |
   'PricingPercentageValue';
 
-  export interface GQLPricingValueNameMap {
+export interface GQLPricingValueNameMap {
     PricingValue: GQLPricingValue;
     MoneyV2: GQLMoneyV2;
     PricingPercentageValue: GQLPricingPercentageValue;
@@ -4448,7 +4448,7 @@ export type GQLMoney = any;
   /**
    * The value of the percentage pricing object.
    */
-  export interface GQLPricingPercentageValue {
+export interface GQLPricingPercentageValue {
 
     /**
      * The percentage value of the object.
@@ -4456,7 +4456,7 @@ export type GQLMoney = any;
     percentage: number;
   }
 
-  export interface GQLCheckoutLineItemConnection {
+export interface GQLCheckoutLineItemConnection {
 
     /**
      * A list of edges.
@@ -4469,7 +4469,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLCheckoutLineItemEdge {
+export interface GQLCheckoutLineItemEdge {
 
     /**
      * A cursor for use in pagination.
@@ -4485,7 +4485,7 @@ export type GQLMoney = any;
   /**
    * A single line item in the checkout, grouped by variant and attributes.
    */
-  export interface GQLCheckoutLineItem extends GQLNode {
+export interface GQLCheckoutLineItem extends GQLNode {
 
     /**
      * Extra information in the form of an array of Key-Value pairs about the line item.
@@ -4526,7 +4526,7 @@ export type GQLMoney = any;
   /**
    * An amount discounting the line that has been allocated by a discount.
    */
-  export interface GQLDiscountAllocation {
+export interface GQLDiscountAllocation {
 
     /**
      * Amount of discount allocated.
@@ -4544,7 +4544,7 @@ export type GQLMoney = any;
    * a shop. An order is created when a customer completes the checkout process,
    * during which time they provides an email address, billing address and payment information.
    */
-  export interface GQLOrder extends GQLNode {
+export interface GQLOrder extends GQLNode {
 
     /**
      * Represents the reason for the order's cancellation. Returns null if the order wasn't canceled.
@@ -4731,7 +4731,7 @@ export type GQLMoney = any;
   /**
    * Represents the reason for the order's cancellation.
    */
-  export enum GQLOrderCancelReason {
+export enum GQLOrderCancelReason {
 
     /**
      * The customer wanted to cancel the order.
@@ -4762,7 +4762,7 @@ export type GQLMoney = any;
   /**
    * Represents the order's current financial status.
    */
-  export enum GQLOrderFinancialStatus {
+export enum GQLOrderFinancialStatus {
 
     /**
      * Displayed as **Pending**.
@@ -4803,7 +4803,7 @@ export type GQLMoney = any;
   /**
    * Represents the order's current fulfillment status.
    */
-  export enum GQLOrderFulfillmentStatus {
+export enum GQLOrderFulfillmentStatus {
 
     /**
      * Displayed as **Unfulfilled**.
@@ -4841,7 +4841,7 @@ export type GQLMoney = any;
     IN_PROGRESS = 'IN_PROGRESS'
   }
 
-  export interface GQLOrderLineItemConnection {
+export interface GQLOrderLineItemConnection {
 
     /**
      * A list of edges.
@@ -4854,7 +4854,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLOrderLineItemEdge {
+export interface GQLOrderLineItemEdge {
 
     /**
      * A cursor for use in pagination.
@@ -4870,7 +4870,7 @@ export type GQLMoney = any;
   /**
    * Represents a single line in an order. There is one line item for each distinct product variant.
    */
-  export interface GQLOrderLineItem {
+export interface GQLOrderLineItem {
 
     /**
      * The number of entries associated to the line item minus the items that have been removed.
@@ -4918,7 +4918,7 @@ export type GQLMoney = any;
   /**
    * Represents a single fulfillment in an order.
    */
-  export interface GQLFulfillment {
+export interface GQLFulfillment {
 
     /**
      * List of the fulfillment's line items.
@@ -4937,7 +4937,7 @@ export type GQLMoney = any;
     trackingInfo: Array<GQLFulfillmentTrackingInfo>;
   }
 
-  export interface GQLFulfillmentLineItemConnection {
+export interface GQLFulfillmentLineItemConnection {
 
     /**
      * A list of edges.
@@ -4950,7 +4950,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLFulfillmentLineItemEdge {
+export interface GQLFulfillmentLineItemEdge {
 
     /**
      * A cursor for use in pagination.
@@ -4966,7 +4966,7 @@ export type GQLMoney = any;
   /**
    * Represents a single line item in a fulfillment. There is at most one fulfillment line item for each order line item.
    */
-  export interface GQLFulfillmentLineItem {
+export interface GQLFulfillmentLineItem {
 
     /**
      * The associated order's line item.
@@ -4982,7 +4982,7 @@ export type GQLMoney = any;
   /**
    * Tracking information associated with the fulfillment.
    */
-  export interface GQLFulfillmentTrackingInfo {
+export interface GQLFulfillmentTrackingInfo {
 
     /**
      * The tracking number of the fulfillment.
@@ -4998,7 +4998,7 @@ export type GQLMoney = any;
   /**
    * The set of valid sort keys for the Order query.
    */
-  export enum GQLOrderSortKeys {
+export enum GQLOrderSortKeys {
 
     /**
      * Sort by the `processed_at` value.
@@ -5023,7 +5023,7 @@ export type GQLMoney = any;
     RELEVANCE = 'RELEVANCE'
   }
 
-  export interface GQLOrderConnection {
+export interface GQLOrderConnection {
 
     /**
      * A list of edges.
@@ -5036,7 +5036,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLOrderEdge {
+export interface GQLOrderEdge {
 
     /**
      * A cursor for use in pagination.
@@ -5053,7 +5053,7 @@ export type GQLMoney = any;
    * Shopify merchants can create pages to hold static HTML content. Each Page object
    * represents a custom page on the online store.
    */
-  export interface GQLPage extends GQLNode {
+export interface GQLPage extends GQLNode {
 
     /**
      * The description of the page, complete with HTML formatting.
@@ -5099,7 +5099,7 @@ export type GQLMoney = any;
   /**
    * The set of valid sort keys for the Page query.
    */
-  export enum GQLPageSortKeys {
+export enum GQLPageSortKeys {
 
     /**
      * Sort by the `title` value.
@@ -5124,7 +5124,7 @@ export type GQLMoney = any;
     RELEVANCE = 'RELEVANCE'
   }
 
-  export interface GQLPageConnection {
+export interface GQLPageConnection {
 
     /**
      * A list of edges.
@@ -5137,7 +5137,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLPageEdge {
+export interface GQLPageEdge {
 
     /**
      * A cursor for use in pagination.
@@ -5150,7 +5150,7 @@ export type GQLMoney = any;
     node: GQLPage;
   }
 
-  export interface GQLStringConnection {
+export interface GQLStringConnection {
 
     /**
      * A list of edges.
@@ -5163,7 +5163,7 @@ export type GQLMoney = any;
     pageInfo: GQLPageInfo;
   }
 
-  export interface GQLStringEdge {
+export interface GQLStringEdge {
 
     /**
      * A cursor for use in pagination.
@@ -5179,7 +5179,7 @@ export type GQLMoney = any;
   /**
    * The set of valid sort keys for the Product query.
    */
-  export enum GQLProductSortKeys {
+export enum GQLProductSortKeys {
 
     /**
      * Sort by the `title` value.
@@ -5232,7 +5232,7 @@ export type GQLMoney = any;
   /**
    * A version of the API.
    */
-  export interface GQLApiVersion {
+export interface GQLApiVersion {
 
     /**
      * The human-readable name of the version.
@@ -5253,7 +5253,7 @@ export type GQLMoney = any;
   /**
    * Shop represents a collection of the general settings and information about the shop.
    */
-  export interface GQLShop {
+export interface GQLShop {
 
     /**
      * List of the shop' articles.
@@ -5365,7 +5365,7 @@ export type GQLMoney = any;
   /**
    * Settings related to payments.
    */
-  export interface GQLPaymentSettings {
+export interface GQLPaymentSettings {
 
     /**
      * List of the card brands which the shop accepts.
@@ -5407,7 +5407,7 @@ export type GQLMoney = any;
   /**
    * Card brand, such as Visa or Mastercard, which can be used for payments.
    */
-  export enum GQLCardBrand {
+export enum GQLCardBrand {
 
     /**
      * Visa
@@ -5443,7 +5443,7 @@ export type GQLMoney = any;
   /**
    * Digital wallet, such as Apple Pay, which can be used for accelerated checkouts.
    */
-  export enum GQLDigitalWallet {
+export enum GQLDigitalWallet {
 
     /**
      * Apple Pay.
@@ -5469,7 +5469,7 @@ export type GQLMoney = any;
   /**
    * Represents a web address.
    */
-  export interface GQLDomain {
+export interface GQLDomain {
 
     /**
      * The host name of the domain (eg: `example.com`).
@@ -5490,7 +5490,7 @@ export type GQLMoney = any;
   /**
    * Policy that a merchant has configured for their store, such as their refund or privacy policy.
    */
-  export interface GQLShopPolicy extends GQLNode {
+export interface GQLShopPolicy extends GQLNode {
 
     /**
      * Policy text, maximum size of 64kb.
@@ -5521,7 +5521,7 @@ export type GQLMoney = any;
   /**
    * The schema’s entry-point for mutations. This acts as the public, top-level API from which all mutation queries must start.
    */
-  export interface GQLMutation {
+export interface GQLMutation {
 
     /**
      * Updates the attributes of a checkout.
@@ -5770,7 +5770,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields required to update a checkout's attributes.
    */
-  export interface GQLCheckoutAttributesUpdateInput {
+export interface GQLCheckoutAttributesUpdateInput {
 
     /**
      * The text of an optional note that a shop owner can attach to the checkout.
@@ -5793,7 +5793,7 @@ export type GQLMoney = any;
   /**
    * Specifies the input fields required for an attribute.
    */
-  export interface GQLAttributeInput {
+export interface GQLAttributeInput {
 
     /**
      * Key or name of the attribute.
@@ -5809,7 +5809,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutAttributesUpdate` mutation.
    */
-  export interface GQLCheckoutAttributesUpdatePayload {
+export interface GQLCheckoutAttributesUpdatePayload {
 
     /**
      * The updated checkout object.
@@ -5831,7 +5831,7 @@ export type GQLMoney = any;
   /**
    * Represents an error that happens during execution of a checkout mutation.
    */
-  export interface GQLCheckoutUserError extends GQLDisplayableError {
+export interface GQLCheckoutUserError extends GQLDisplayableError {
 
     /**
      * Error code to uniquely identify the error.
@@ -5852,7 +5852,7 @@ export type GQLMoney = any;
   /**
    * Represents an error in the input of a mutation.
    */
-  export interface GQLDisplayableError {
+export interface GQLDisplayableError {
 
     /**
      * Path to the input field which caused the error.
@@ -5866,12 +5866,12 @@ export type GQLMoney = any;
   }
 
   /** Use this to resolve interface type DisplayableError */
-  export type GQLPossibleDisplayableErrorTypeNames =
+export type GQLPossibleDisplayableErrorTypeNames =
   'CheckoutUserError' |
   'UserError' |
   'CustomerUserError';
 
-  export interface GQLDisplayableErrorNameMap {
+export interface GQLDisplayableErrorNameMap {
     DisplayableError: GQLDisplayableError;
     CheckoutUserError: GQLCheckoutUserError;
     UserError: GQLUserError;
@@ -5881,7 +5881,7 @@ export type GQLMoney = any;
   /**
    * Possible error codes that could be returned by CheckoutUserError.
    */
-  export enum GQLCheckoutErrorCode {
+export enum GQLCheckoutErrorCode {
 
     /**
      * Input value is blank.
@@ -6072,7 +6072,7 @@ export type GQLMoney = any;
   /**
    * Represents an error in the input of a mutation.
    */
-  export interface GQLUserError extends GQLDisplayableError {
+export interface GQLUserError extends GQLDisplayableError {
 
     /**
      * Path to the input field which caused the error.
@@ -6088,7 +6088,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields required to update a checkout's attributes.
    */
-  export interface GQLCheckoutAttributesUpdateV2Input {
+export interface GQLCheckoutAttributesUpdateV2Input {
 
     /**
      * The text of an optional note that a shop owner can attach to the checkout.
@@ -6111,7 +6111,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutAttributesUpdateV2` mutation.
    */
-  export interface GQLCheckoutAttributesUpdateV2Payload {
+export interface GQLCheckoutAttributesUpdateV2Payload {
 
     /**
      * The updated checkout object.
@@ -6133,7 +6133,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCompleteFree` mutation.
    */
-  export interface GQLCheckoutCompleteFreePayload {
+export interface GQLCheckoutCompleteFreePayload {
 
     /**
      * The updated checkout object.
@@ -6156,7 +6156,7 @@ export type GQLMoney = any;
    * Specifies the fields required to complete a checkout with
    * a Shopify vaulted credit card payment.
    */
-  export interface GQLCreditCardPaymentInput {
+export interface GQLCreditCardPaymentInput {
 
     /**
      * The amount of the payment.
@@ -6188,7 +6188,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields accepted to create or update a mailing address.
    */
-  export interface GQLMailingAddressInput {
+export interface GQLMailingAddressInput {
 
     /**
      * The first line of the address. Typically the street address or PO Box number.
@@ -6246,7 +6246,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCompleteWithCreditCard` mutation.
    */
-  export interface GQLCheckoutCompleteWithCreditCardPayload {
+export interface GQLCheckoutCompleteWithCreditCardPayload {
 
     /**
      * The checkout on which the payment was applied.
@@ -6273,7 +6273,7 @@ export type GQLMoney = any;
   /**
    * A payment applied to a checkout.
    */
-  export interface GQLPayment extends GQLNode {
+export interface GQLPayment extends GQLNode {
 
     /**
      * The amount of the payment.
@@ -6340,7 +6340,7 @@ export type GQLMoney = any;
   /**
    * Credit card information used for a payment.
    */
-  export interface GQLCreditCard {
+export interface GQLCreditCard {
 
     /**
      * The brand of the credit card.
@@ -6386,7 +6386,7 @@ export type GQLMoney = any;
   /**
    * An object representing exchange of money for a product or service.
    */
-  export interface GQLTransaction {
+export interface GQLTransaction {
 
     /**
      * The amount of money that the transaction was for.
@@ -6421,7 +6421,7 @@ export type GQLMoney = any;
     test: boolean;
   }
 
-  export enum GQLTransactionKind {
+export enum GQLTransactionKind {
     SALE = 'SALE',
     CAPTURE = 'CAPTURE',
     AUTHORIZATION = 'AUTHORIZATION',
@@ -6429,7 +6429,7 @@ export type GQLMoney = any;
     CHANGE = 'CHANGE'
   }
 
-  export enum GQLTransactionStatus {
+export enum GQLTransactionStatus {
     PENDING = 'PENDING',
     SUCCESS = 'SUCCESS',
     FAILURE = 'FAILURE',
@@ -6440,7 +6440,7 @@ export type GQLMoney = any;
    * Specifies the fields required to complete a checkout with
    * a Shopify vaulted credit card payment.
    */
-  export interface GQLCreditCardPaymentInputV2 {
+export interface GQLCreditCardPaymentInputV2 {
 
     /**
      * The amount and currency of the payment.
@@ -6472,7 +6472,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields for a monetary value with currency.
    */
-  export interface GQLMoneyInput {
+export interface GQLMoneyInput {
 
     /**
      * Decimal money amount.
@@ -6488,7 +6488,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCompleteWithCreditCardV2` mutation.
    */
-  export interface GQLCheckoutCompleteWithCreditCardV2Payload {
+export interface GQLCheckoutCompleteWithCreditCardV2Payload {
 
     /**
      * The checkout on which the payment was applied.
@@ -6516,7 +6516,7 @@ export type GQLMoney = any;
    * Specifies the fields required to complete a checkout with
    * a tokenized payment.
    */
-  export interface GQLTokenizedPaymentInput {
+export interface GQLTokenizedPaymentInput {
 
     /**
      * The amount of the payment.
@@ -6558,7 +6558,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCompleteWithTokenizedPayment` mutation.
    */
-  export interface GQLCheckoutCompleteWithTokenizedPaymentPayload {
+export interface GQLCheckoutCompleteWithTokenizedPaymentPayload {
 
     /**
      * The checkout on which the payment was applied.
@@ -6586,7 +6586,7 @@ export type GQLMoney = any;
    * Specifies the fields required to complete a checkout with
    * a tokenized payment.
    */
-  export interface GQLTokenizedPaymentInputV2 {
+export interface GQLTokenizedPaymentInputV2 {
 
     /**
      * The amount and currency of the payment.
@@ -6629,7 +6629,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCompleteWithTokenizedPaymentV2` mutation.
    */
-  export interface GQLCheckoutCompleteWithTokenizedPaymentV2Payload {
+export interface GQLCheckoutCompleteWithTokenizedPaymentV2Payload {
 
     /**
      * The checkout on which the payment was applied.
@@ -6657,7 +6657,7 @@ export type GQLMoney = any;
    * Specifies the fields required to complete a checkout with
    * a tokenized payment.
    */
-  export interface GQLTokenizedPaymentInputV3 {
+export interface GQLTokenizedPaymentInputV3 {
 
     /**
      * The amount and currency of the payment.
@@ -6700,7 +6700,7 @@ export type GQLMoney = any;
   /**
    * The valid values for the types of payment token.
    */
-  export enum GQLPaymentTokenType {
+export enum GQLPaymentTokenType {
 
     /**
      * Apple Pay token type.
@@ -6726,7 +6726,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCompleteWithTokenizedPaymentV3` mutation.
    */
-  export interface GQLCheckoutCompleteWithTokenizedPaymentV3Payload {
+export interface GQLCheckoutCompleteWithTokenizedPaymentV3Payload {
 
     /**
      * The checkout on which the payment was applied.
@@ -6753,7 +6753,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields required to create a checkout.
    */
-  export interface GQLCheckoutCreateInput {
+export interface GQLCheckoutCreateInput {
 
     /**
      * The email with which the customer wants to checkout.
@@ -6798,7 +6798,7 @@ export type GQLMoney = any;
   /**
    * Specifies the input fields to create a line item on a checkout.
    */
-  export interface GQLCheckoutLineItemInput {
+export interface GQLCheckoutLineItemInput {
 
     /**
      * Extra information in the form of an array of Key-Value pairs about the line item.
@@ -6819,7 +6819,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCreate` mutation.
    */
-  export interface GQLCheckoutCreatePayload {
+export interface GQLCheckoutCreatePayload {
 
     /**
      * The new checkout object.
@@ -6841,7 +6841,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCustomerAssociate` mutation.
    */
-  export interface GQLCheckoutCustomerAssociatePayload {
+export interface GQLCheckoutCustomerAssociatePayload {
 
     /**
      * The updated checkout object.
@@ -6862,7 +6862,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCustomerAssociateV2` mutation.
    */
-  export interface GQLCheckoutCustomerAssociateV2Payload {
+export interface GQLCheckoutCustomerAssociateV2Payload {
 
     /**
      * The updated checkout object.
@@ -6889,7 +6889,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCustomerDisassociate` mutation.
    */
-  export interface GQLCheckoutCustomerDisassociatePayload {
+export interface GQLCheckoutCustomerDisassociatePayload {
 
     /**
      * The updated checkout object.
@@ -6911,7 +6911,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutCustomerDisassociateV2` mutation.
    */
-  export interface GQLCheckoutCustomerDisassociateV2Payload {
+export interface GQLCheckoutCustomerDisassociateV2Payload {
 
     /**
      * The updated checkout object.
@@ -6933,7 +6933,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutDiscountCodeApply` mutation.
    */
-  export interface GQLCheckoutDiscountCodeApplyPayload {
+export interface GQLCheckoutDiscountCodeApplyPayload {
 
     /**
      * The updated checkout object.
@@ -6955,7 +6955,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutDiscountCodeApplyV2` mutation.
    */
-  export interface GQLCheckoutDiscountCodeApplyV2Payload {
+export interface GQLCheckoutDiscountCodeApplyV2Payload {
 
     /**
      * The updated checkout object.
@@ -6977,7 +6977,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutDiscountCodeRemove` mutation.
    */
-  export interface GQLCheckoutDiscountCodeRemovePayload {
+export interface GQLCheckoutDiscountCodeRemovePayload {
 
     /**
      * The updated checkout object.
@@ -6999,7 +6999,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutEmailUpdate` mutation.
    */
-  export interface GQLCheckoutEmailUpdatePayload {
+export interface GQLCheckoutEmailUpdatePayload {
 
     /**
      * The checkout object with the updated email.
@@ -7021,7 +7021,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutEmailUpdateV2` mutation.
    */
-  export interface GQLCheckoutEmailUpdateV2Payload {
+export interface GQLCheckoutEmailUpdateV2Payload {
 
     /**
      * The checkout object with the updated email.
@@ -7043,7 +7043,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutGiftCardApply` mutation.
    */
-  export interface GQLCheckoutGiftCardApplyPayload {
+export interface GQLCheckoutGiftCardApplyPayload {
 
     /**
      * The updated checkout object.
@@ -7065,7 +7065,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutGiftCardRemove` mutation.
    */
-  export interface GQLCheckoutGiftCardRemovePayload {
+export interface GQLCheckoutGiftCardRemovePayload {
 
     /**
      * The updated checkout object.
@@ -7087,7 +7087,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutGiftCardRemoveV2` mutation.
    */
-  export interface GQLCheckoutGiftCardRemoveV2Payload {
+export interface GQLCheckoutGiftCardRemoveV2Payload {
 
     /**
      * The updated checkout object.
@@ -7109,7 +7109,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutGiftCardsAppend` mutation.
    */
-  export interface GQLCheckoutGiftCardsAppendPayload {
+export interface GQLCheckoutGiftCardsAppendPayload {
 
     /**
      * The updated checkout object.
@@ -7131,7 +7131,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutLineItemsAdd` mutation.
    */
-  export interface GQLCheckoutLineItemsAddPayload {
+export interface GQLCheckoutLineItemsAddPayload {
 
     /**
      * The updated checkout object.
@@ -7153,7 +7153,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutLineItemsRemove` mutation.
    */
-  export interface GQLCheckoutLineItemsRemovePayload {
+export interface GQLCheckoutLineItemsRemovePayload {
 
     /**
      * The updated checkout object.
@@ -7175,7 +7175,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutLineItemsReplace` mutation.
    */
-  export interface GQLCheckoutLineItemsReplacePayload {
+export interface GQLCheckoutLineItemsReplacePayload {
 
     /**
      * The updated checkout object.
@@ -7191,7 +7191,7 @@ export type GQLMoney = any;
   /**
    * Specifies the input fields to update a line item on the checkout.
    */
-  export interface GQLCheckoutLineItemUpdateInput {
+export interface GQLCheckoutLineItemUpdateInput {
 
     /**
      * The identifier of the line item.
@@ -7217,7 +7217,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutLineItemsUpdate` mutation.
    */
-  export interface GQLCheckoutLineItemsUpdatePayload {
+export interface GQLCheckoutLineItemsUpdatePayload {
 
     /**
      * The updated checkout object.
@@ -7239,7 +7239,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutShippingAddressUpdate` mutation.
    */
-  export interface GQLCheckoutShippingAddressUpdatePayload {
+export interface GQLCheckoutShippingAddressUpdatePayload {
 
     /**
      * The updated checkout object.
@@ -7261,7 +7261,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutShippingAddressUpdateV2` mutation.
    */
-  export interface GQLCheckoutShippingAddressUpdateV2Payload {
+export interface GQLCheckoutShippingAddressUpdateV2Payload {
 
     /**
      * The updated checkout object.
@@ -7283,7 +7283,7 @@ export type GQLMoney = any;
   /**
    * Return type for `checkoutShippingLineUpdate` mutation.
    */
-  export interface GQLCheckoutShippingLineUpdatePayload {
+export interface GQLCheckoutShippingLineUpdatePayload {
 
     /**
      * The updated checkout object.
@@ -7305,7 +7305,7 @@ export type GQLMoney = any;
   /**
    * Specifies the input fields required to create a customer access token.
    */
-  export interface GQLCustomerAccessTokenCreateInput {
+export interface GQLCustomerAccessTokenCreateInput {
 
     /**
      * The email associated to the customer.
@@ -7321,7 +7321,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAccessTokenCreate` mutation.
    */
-  export interface GQLCustomerAccessTokenCreatePayload {
+export interface GQLCustomerAccessTokenCreatePayload {
 
     /**
      * The newly created customer access token object.
@@ -7343,7 +7343,7 @@ export type GQLMoney = any;
   /**
    * A CustomerAccessToken represents the unique token required to make modifications to the customer object.
    */
-  export interface GQLCustomerAccessToken {
+export interface GQLCustomerAccessToken {
 
     /**
      * The customer’s access token.
@@ -7359,7 +7359,7 @@ export type GQLMoney = any;
   /**
    * Represents an error that happens during execution of a customer mutation.
    */
-  export interface GQLCustomerUserError extends GQLDisplayableError {
+export interface GQLCustomerUserError extends GQLDisplayableError {
 
     /**
      * Error code to uniquely identify the error.
@@ -7380,7 +7380,7 @@ export type GQLMoney = any;
   /**
    * Possible error codes that could be returned by CustomerUserError.
    */
-  export enum GQLCustomerErrorCode {
+export enum GQLCustomerErrorCode {
 
     /**
      * Input value is blank.
@@ -7461,7 +7461,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAccessTokenCreateWithMultipass` mutation.
    */
-  export interface GQLCustomerAccessTokenCreateWithMultipassPayload {
+export interface GQLCustomerAccessTokenCreateWithMultipassPayload {
 
     /**
      * An access token object associated with the customer.
@@ -7477,7 +7477,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAccessTokenDelete` mutation.
    */
-  export interface GQLCustomerAccessTokenDeletePayload {
+export interface GQLCustomerAccessTokenDeletePayload {
 
     /**
      * The destroyed access token.
@@ -7498,7 +7498,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAccessTokenRenew` mutation.
    */
-  export interface GQLCustomerAccessTokenRenewPayload {
+export interface GQLCustomerAccessTokenRenewPayload {
 
     /**
      * The renewed customer access token object.
@@ -7514,7 +7514,7 @@ export type GQLMoney = any;
   /**
    * Specifies the input fields required to activate a customer.
    */
-  export interface GQLCustomerActivateInput {
+export interface GQLCustomerActivateInput {
 
     /**
      * The activation token required to activate the customer.
@@ -7530,7 +7530,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerActivate` mutation.
    */
-  export interface GQLCustomerActivatePayload {
+export interface GQLCustomerActivatePayload {
 
     /**
      * The customer object.
@@ -7557,7 +7557,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerActivateByUrl` mutation.
    */
-  export interface GQLCustomerActivateByUrlPayload {
+export interface GQLCustomerActivateByUrlPayload {
 
     /**
      * The customer that was activated.
@@ -7578,7 +7578,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAddressCreate` mutation.
    */
-  export interface GQLCustomerAddressCreatePayload {
+export interface GQLCustomerAddressCreatePayload {
 
     /**
      * The new customer address object.
@@ -7600,7 +7600,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAddressDelete` mutation.
    */
-  export interface GQLCustomerAddressDeletePayload {
+export interface GQLCustomerAddressDeletePayload {
 
     /**
      * List of errors that occurred executing the mutation.
@@ -7622,7 +7622,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerAddressUpdate` mutation.
    */
-  export interface GQLCustomerAddressUpdatePayload {
+export interface GQLCustomerAddressUpdatePayload {
 
     /**
      * The customer’s updated mailing address.
@@ -7644,7 +7644,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields required to create a new customer.
    */
-  export interface GQLCustomerCreateInput {
+export interface GQLCustomerCreateInput {
 
     /**
      * The customer’s first name.
@@ -7682,7 +7682,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerCreate` mutation.
    */
-  export interface GQLCustomerCreatePayload {
+export interface GQLCustomerCreatePayload {
 
     /**
      * The created customer object.
@@ -7704,7 +7704,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerDefaultAddressUpdate` mutation.
    */
-  export interface GQLCustomerDefaultAddressUpdatePayload {
+export interface GQLCustomerDefaultAddressUpdatePayload {
 
     /**
      * The updated customer object.
@@ -7726,7 +7726,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerRecover` mutation.
    */
-  export interface GQLCustomerRecoverPayload {
+export interface GQLCustomerRecoverPayload {
 
     /**
      * List of errors that occurred executing the mutation.
@@ -7743,7 +7743,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields required to reset a customer’s password.
    */
-  export interface GQLCustomerResetInput {
+export interface GQLCustomerResetInput {
 
     /**
      * The reset token required to reset the customer’s password.
@@ -7759,7 +7759,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerReset` mutation.
    */
-  export interface GQLCustomerResetPayload {
+export interface GQLCustomerResetPayload {
 
     /**
      * The customer object which was reset.
@@ -7786,7 +7786,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerResetByUrl` mutation.
    */
-  export interface GQLCustomerResetByUrlPayload {
+export interface GQLCustomerResetByUrlPayload {
 
     /**
      * The customer object which was reset.
@@ -7813,7 +7813,7 @@ export type GQLMoney = any;
   /**
    * Specifies the fields required to update the Customer information.
    */
-  export interface GQLCustomerUpdateInput {
+export interface GQLCustomerUpdateInput {
 
     /**
      * The customer’s first name.
@@ -7851,7 +7851,7 @@ export type GQLMoney = any;
   /**
    * Return type for `customerUpdate` mutation.
    */
-  export interface GQLCustomerUpdatePayload {
+export interface GQLCustomerUpdatePayload {
 
     /**
      * The updated customer object.
@@ -7879,14 +7879,14 @@ export type GQLMoney = any;
   /**
    * **defaultDef**
    */
-  export interface GQLQuery {
+export interface GQLQuery {
     default?: string;
   }
 
   /**
    * Automatic discount applications capture the intentions of a discount that was automatically applied.
    */
-  export interface GQLAutomaticDiscountApplication extends GQLDiscountApplication {
+export interface GQLAutomaticDiscountApplication extends GQLDiscountApplication {
 
     /**
      * The method by which the discount's value is allocated to its entitled items.
@@ -7918,7 +7918,7 @@ export type GQLMoney = any;
    * Discount code applications capture the intentions of a discount code at
    * the time that it is applied.
    */
-  export interface GQLDiscountCodeApplication extends GQLDiscountApplication {
+export interface GQLDiscountCodeApplication extends GQLDiscountApplication {
 
     /**
      * The method by which the discount's value is allocated to its entitled items.
@@ -7954,7 +7954,7 @@ export type GQLMoney = any;
   /**
    * Represents a video hosted outside of Shopify.
    */
-  export interface GQLExternalVideo extends GQLNode, GQLMedia {
+export interface GQLExternalVideo extends GQLNode, GQLMedia {
 
     /**
      * A word or phrase to share the nature or contents of a media.
@@ -7985,7 +7985,7 @@ export type GQLMoney = any;
   /**
    * Manual discount applications capture the intentions of a discount that was manually created.
    */
-  export interface GQLManualDiscountApplication extends GQLDiscountApplication {
+export interface GQLManualDiscountApplication extends GQLDiscountApplication {
 
     /**
      * The method by which the discount's value is allocated to its entitled items.
@@ -8021,7 +8021,7 @@ export type GQLMoney = any;
   /**
    * Represents a Shopify hosted image.
    */
-  export interface GQLMediaImage extends GQLNode, GQLMedia {
+export interface GQLMediaImage extends GQLNode, GQLMedia {
 
     /**
      * A word or phrase to share the nature or contents of a media.
@@ -8052,7 +8052,7 @@ export type GQLMoney = any;
   /**
    * Represents a Shopify hosted 3D model.
    */
-  export interface GQLModel3d extends GQLNode, GQLMedia {
+export interface GQLModel3d extends GQLNode, GQLMedia {
 
     /**
      * A word or phrase to share the nature or contents of a media.
@@ -8083,7 +8083,7 @@ export type GQLMoney = any;
   /**
    * Represents a source for a Shopify hosted 3d model.
    */
-  export interface GQLModel3dSource {
+export interface GQLModel3dSource {
 
     /**
      * The filesize of the 3d model.
@@ -8110,7 +8110,7 @@ export type GQLMoney = any;
    * Script discount applications capture the intentions of a discount that
    * was created by a Shopify Script.
    */
-  export interface GQLScriptDiscountApplication extends GQLDiscountApplication {
+export interface GQLScriptDiscountApplication extends GQLDiscountApplication {
 
     /**
      * The method by which the discount's value is allocated to its entitled items.
@@ -8147,7 +8147,7 @@ export type GQLMoney = any;
   /**
    * Represents a Shopify hosted video.
    */
-  export interface GQLVideo extends GQLNode, GQLMedia {
+export interface GQLVideo extends GQLNode, GQLMedia {
 
     /**
      * A word or phrase to share the nature or contents of a media.
@@ -8178,7 +8178,7 @@ export type GQLMoney = any;
   /**
    * Represents a source for a Shopify hosted video.
    */
-  export interface GQLVideoSource {
+export interface GQLVideoSource {
 
     /**
      * The format of the video source.

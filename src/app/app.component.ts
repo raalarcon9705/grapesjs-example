@@ -17,9 +17,7 @@ export class AppComponent implements AfterViewInit {
     private cfr: ComponentFactoryResolver,
     private appRef: ApplicationRef,
     private injector: Injector
-  ) {
-    window.addEventListener('storage', e => alert('siiii'));
-  }
+  ) { }
 
   ngAfterViewInit(): void {
 

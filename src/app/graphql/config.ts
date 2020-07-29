@@ -7,4 +7,4 @@ export interface GraphQLConfig {
 export const GRAPHQL_CONFIG: GraphQLConfig = {
   uri: 'https://example.com/graphql',
   headers: {}
-}
+};
